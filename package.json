@@ -8,7 +8,8 @@
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",
     "build": "tsc --sourceMap",
-    "observer": "npm run build && node dist/1.observer/main.js  "
+    "observer": "npm run build && node dist/1.observer/main.js",
+    "decorator": "npm run build && node dist/2.decorator/main.js"
   },
   "author": "przemkow",
   "license": "ISC",
