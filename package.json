@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start karma.config.js",
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",
     "build": "tsc --sourceMap",
@@ -13,7 +13,16 @@
   "author": "przemkow",
   "license": "ISC",
   "devDependencies": {
+    "@types/jasmine": "~2.5.41",
+    "browserify": "~14.0.0",
+    "jasmine-core": "~2.5.2",
+    "karma": "~1.4.0",
+    "karma-browserify": "~5.1.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-typescript-preprocessor": "~0.3.1",
     "tslint": "~4.4.2",
-    "typescript": "~2.1.5"
+    "typescript": "~2.1.5",
+    "watchify": "^3.9.0"
   }
 }
