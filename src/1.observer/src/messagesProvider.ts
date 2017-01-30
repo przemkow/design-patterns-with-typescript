@@ -33,7 +33,7 @@ export class MessagesProvider implements Observable {
     console.log(`Message: '${message}' has been send to: '${receiverTelNumber}'`);
   }
 
-  receiveMessage(message: string, senderTelNumber: string) {
+  receiveMessage(message: string, senderTelNumber: string): void {
     this.notifyObserver(`You have got new message: '${message}' \n from: ${senderTelNumber} \n`);
   }
 }
